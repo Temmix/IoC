@@ -11,6 +11,12 @@
             this._log = log;
         }
 
+        public Car(Engine engine)
+        {
+            this._engine = engine;
+            this._log = new EmailLog();
+        }
+
         public void Go(int power)
         {
             _engine.Start(power);
